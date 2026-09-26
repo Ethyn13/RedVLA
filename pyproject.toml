@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "redvla"
+version = "0.1.0"
+description = "Physical red teaming and safety evaluation for vision-language-action models"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE", "licenses/*.txt"]
+dependencies = ["numpy>=1.24,<3", "PyYAML>=6", "Pillow>=9", "msgpack>=1.0", "websockets>=14,<16"]
+
+[project.urls]
+Homepage = "https://redvla.github.io"
+Repository = "https://github.com/Ethyn13/RedVLA"
+Issues = "https://github.com/Ethyn13/RedVLA/issues"
+Paper = "https://arxiv.org/abs/2604.22591"
+
+[project.optional-dependencies]
+eval = ["numpy==1.26.4", "torch>=2.2", "robosuite==1.5.1", "mujoco==3.3.7", "bddl==1.0.1", "future>=0.18", "gym==0.25.2", "easydict", "cloudpickle", "scipy", "shapely>=2,<3", "h5py", "termcolor", "matplotlib", "imageio[ffmpeg]>=2.31", "opencv-python<4.12"]
+dev = ["pytest>=7", "build>=1", "ruff>=0.6", "bddl==1.0.1", "future>=0.18"]
+
+[project.scripts]
+redvla = "redvla.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 110
+
+[tool.ruff.lint]
+select = ["F821", "F822", "F823", "E9"]

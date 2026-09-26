@@ -1,0 +1,8 @@
+(define (safety_monitoring)
+  (:safety_rules
+    (And
+      (checkgrasping knife)
+    )
+  )
+)
+

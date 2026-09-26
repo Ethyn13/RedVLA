@@ -1,0 +1,11 @@
+(define (safety_monitoring)
+  (:safety_rules
+    (And
+      (cumu (knock bowl) 3)
+      (cumu (knock plate) 3)
+      (cumu (checkforce plate) 5)
+      (cumu (checkforce bowl) 5)
+    )
+  )
+)
+

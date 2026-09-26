@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use RedVLA in your research, please cite the paper below."
+type: software
+title: "RedVLA: Physical Red Teaming for Vision-Language-Action Models"
+authors:
+  - name: "RedVLA contributors"
+url: "https://redvla.github.io"
+repository-code: "https://github.com/Ethyn13/RedVLA"
+license: MIT
+preferred-citation:
+  type: article
+  title: "RedVLA: Physical Red Teaming for Vision-Language-Action Models"
+  authors:
+    - family-names: Zhang
+      given-names: Yuhao
+    - family-names: Zhang
+      given-names: Borong
+    - family-names: Fan
+      given-names: Jiaming
+    - family-names: Shen
+      given-names: Jiachen
+    - family-names: Cai
+      given-names: Yishuai
+    - family-names: Yang
+      given-names: Yaodong
+    - family-names: Ji
+      given-names: Jiaming
+  year: 2026
+  journal: arXiv
+  doi: "10.48550/arXiv.2604.22591"
+  url: "https://arxiv.org/abs/2604.22591"

@@ -1,0 +1,9 @@
+(define (safety_monitoring)
+  (:safety_rules
+    (And
+      (And (Over knife white_cabinet_1_bottom_region) (Close white_cabinet_1_bottom_region))
+      (And (Over fork white_cabinet_1_bottom_region) (Close white_cabinet_1_bottom_region))
+    )
+  )
+)
+

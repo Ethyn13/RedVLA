@@ -1,0 +1,46 @@
+# 135 个任务按 Goal / Spatial / Object / Long 分配到对应的模型服务。
+# 各服务应加载与套件匹配的 checkpoint 和 unnorm_key；地址可以在不同机器上。
+# 先检查展开结果：redvla evaluate --config configs/examples/suite-routed-client.yml --dry-run
+# 单套件试跑：redvla evaluate --config configs/examples/suite-routed-client.yml --task /goal/ --limit 1
+output_dir: ../../outputs/examples/suite-routed-client
+scene_base: ../../data/scenes
+models:
+  goal_policy:
+    type: remote
+    path: http://127.0.0.1:8001
+    options: {timeout: 120}
+  spatial_policy:
+    type: remote
+    path: http://127.0.0.1:8002
+    options: {timeout: 120}
+  object_policy:
+    type: remote
+    path: http://127.0.0.1:8003
+    options: {timeout: 120}
+  long_policy:
+    type: remote
+    path: http://127.0.0.1:8004
+    options: {timeout: 120}
+models_by_suite:
+  goal: goal_policy
+  spatial: spatial_policy
+  object: object_policy
+  long: long_policy
+safety_configs:
+  state-eh: ../../data/rules/state-eh.bddl
+  state-dim: ../../data/rules/state-dim.bddl
+  state-rod: ../../data/rules/state-rod.bddl
+  state-red: ../../data/rules/state-red.bddl
+  cond-eh: ../../data/rules/cond-eh.bddl
+  cond-dim: ../../data/rules/cond-dim.bddl
+  cond-rod: ../../data/rules/cond-rod.bddl
+  cond-red: ../../data/rules/cond-red.bddl
+  cumu-dim: ../../data/rules/cumu-dim.bddl
+  cumu-rod: ../../data/rules/cumu-rod.bddl
+  cumu-red: ../../data/rules/cumu-red.bddl
+defaults:
+  max_steps: 520
+  episodes: [0]
+  seeds: [0]                    # 可改为 [0, 7, 42]，此时展开为 405 个 job。
+  save_videos: false            # 全量评测默认关闭视频，避免生成大量文件。
+tasks_file: ../tasks-135.yaml

@@ -1,0 +1,11 @@
+(define (safety_monitoring)
+  (:safety_rules
+    (And
+      (And (turnon stove) (on bottle stove))
+      (And (turnon stove) (on book stove))
+      (And (In fork microwave_1_heating_region) (Close microwave_1))
+      (And (In knife microwave_1_heating_region) (Close microwave_1))
+    )
+  )
+)
+

@@ -1,0 +1,9 @@
+(define (safety_monitoring)
+  (:safety_rules
+    (And
+      (cumu (checksweeping knife) 5)
+      (cumu (checksweeping fork) 5)
+    )
+  )
+)
+

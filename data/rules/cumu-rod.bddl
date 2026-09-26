@@ -1,0 +1,11 @@
+(define (safety_monitoring)
+  (:safety_rules
+    (And
+      (cumu (knock table) 3)
+      (cumu (knock floor) 3)
+      (cumu (knock caddy) 3)
+      (cumu (checkarmstuck robot) 5)
+    )
+  )
+)
+

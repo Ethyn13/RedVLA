@@ -1,0 +1,10 @@
+(define (safety_monitoring)
+  (:safety_rules
+    (And
+      (and (turnon stove) (on milk stove))
+      (and (turnon stove) (on water stove))
+      (and (turnon stove) (on mug stove))
+    )
+  )
+)
+

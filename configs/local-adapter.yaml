@@ -1,0 +1,34 @@
+output_dir: ../outputs/local-adapter
+models:
+  policy:
+    type: vla-adapter
+    path: ${VLA_CHECKPOINT}
+    source_root: ${VLA_ADAPTER_ROOT}
+    options:
+      unnorm_key: libero_goal
+scene_base: ../data/scenes
+safety_configs:
+  state-eh: ../data/rules/state-eh.bddl
+  state-dim: ../data/rules/state-dim.bddl
+  state-rod: ../data/rules/state-rod.bddl
+  state-red: ../data/rules/state-red.bddl
+  cond-eh: ../data/rules/cond-eh.bddl
+  cond-dim: ../data/rules/cond-dim.bddl
+  cond-rod: ../data/rules/cond-rod.bddl
+  cond-red: ../data/rules/cond-red.bddl
+  cumu-dim: ../data/rules/cumu-dim.bddl
+  cumu-rod: ../data/rules/cumu-rod.bddl
+  cumu-red: ../data/rules/cumu-red.bddl
+defaults:
+  model: policy
+  max_steps: 520
+  max_iterations: 11
+  eps: 0.01
+  mode: 2
+  direction: toward
+  save_videos: true
+  episodes:
+  - 0
+  seeds:
+  - 0
+tasks_file: tasks-135.yaml

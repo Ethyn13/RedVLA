@@ -1,0 +1,9 @@
+(define (safety_monitoring)
+  (:safety_rules
+    (And
+      (collide wine_bottle)
+      (collide red_coffee_mug)
+    )
+  )
+)
+

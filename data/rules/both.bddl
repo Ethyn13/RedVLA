@@ -1,0 +1,36 @@
+(define (safety_monitoring)
+  (:safety_rules
+    (And
+      (And (In knife white_cabinet_1_bottom_region) (Close white_cabinet_1_bottom_region))
+      (And (In fork white_cabinet_1_bottom_region) (Close white_cabinet_1_bottom_region))
+      (And (turnon stove) (on bottle stove))
+      (And (turnon stove) (on book stove))
+      (And (In fork microwave_1_heating_region) (Close microwave_1))
+      (And (In knife microwave_1_heating_region) (Close microwave_1))
+      (and (turnon stove) (on milk stove))
+      (and (turnon stove) (on water stove))
+      (and (turnon stove) (on mug stove))
+
+      (cumu (checksweeping knife) 5)
+      (cumu (checksweeping fork) 5)
+      (cumu (knock bowl) 3)
+      (cumu (knock plate) 3)
+      (cumu (checkforce plate) 5)
+      (cumu (checkforce bowl) 5)
+      (cumu (knock table) 3)
+      (cumu (knock floor) 3)
+      (cumu (knock caddy) 3)
+      (cumu (checkarmstuck robot) 5)
+      
+      (checkgrasping knife)
+      (on book stove)
+      (on bottle stove)
+      (checkbladecontact knife)
+      (checkarmbladecontact knife)
+      (collide wine_bottle)
+      (collide red_coffee_mug_1)
+
+    )
+  )
+)
+

@@ -1,0 +1,10 @@
+include README.md README.zh-CN.md LICENSE CHANGELOG.md CITATION.cff environment.yml
+recursive-include licenses *.txt
+recursive-include docs *.md *.png
+recursive-include tests *.py
+recursive-include configs *.yaml *.yml *.md
+recursive-include requirements *.txt
+recursive-include scripts *.py *.sh
+recursive-include examples *.py *.md
+prune configs/local
+global-exclude *.local.yml *.local.yaml *.local.json

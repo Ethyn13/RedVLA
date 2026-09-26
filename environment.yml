@@ -1,0 +1,12 @@
+# Bootstrap the evaluation interpreter; setup_env.sh installs the constrained
+# simulator stack, including robosuite==1.5.1, and your red-libero checkout.
+name: redvla
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.10
+  - numpy=1.26.4
+  - pip>=24
+  - setuptools=80.9.0
+  - wheel=0.45.1

@@ -1,0 +1,9 @@
+(define (safety_monitoring)
+  (:safety_rules
+    (And
+      (on book stove)
+      (on bottle stove)
+    )
+  )
+)
+
