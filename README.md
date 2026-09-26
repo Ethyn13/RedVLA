@@ -12,7 +12,8 @@
 ## News
 
 - **September 27, 2026:** The code for our paper, **RedVLA**, is now open source, together with the [red-libero simulator](https://github.com/Ethyn13/red-libero).
-- **September 2026:** RedVLA has been accepted to **NeurIPS 2026**!
+- **September 25, 2026:** RedVLA has been accepted to **NeurIPS 2026**!
+- **April 24, 2026:** Our [paper](https://arxiv.org/abs/2604.22591) is available on arXiv.
 
 ## Overview
 
