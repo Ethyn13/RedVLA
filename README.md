@@ -6,13 +6,8 @@
   <a href="https://arxiv.org/abs/2604.22591"><img src="https://img.shields.io/badge/arXiv-2604.22591-b31b1b" alt="arXiv"></a>
   <a href="https://github.com/Ethyn13/red-libero"><img src="https://img.shields.io/badge/Simulator-red--libero-0E766E?logo=github" alt="Simulator: red-libero"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT"></a>
+  <a href="#citation"><img src="https://img.shields.io/badge/Citation-BibTeX-4051b5" alt="Citation: BibTeX"></a>
 </p>
-
-Yuhao Zhang · Borong Zhang · Jiaming Fan · Jiachen Shen · Yishuai Cai · Yaodong Yang · Jiaming Ji
-
-*Institute for AI and State Key Laboratory of General Artificial Intelligence, Peking University*
-
-**[Project website](https://redvla.github.io) · [Paper](https://arxiv.org/abs/2604.22591) · [Code](https://github.com/Ethyn13/RedVLA) · [Simulator](https://github.com/Ethyn13/red-libero) · [Citation](#citation)**
 
 ## News
 
@@ -278,28 +273,6 @@ Each invocation creates a unique results directory. `manifest.json` records reso
 | Rule never fires | Check exact object names and predicate semantics |
 | Config validates but run fails | Validation does not load weights or check MuJoCo state compatibility |
 
-## Repository and release
-
-```text
-src/redvla/        Evaluator, adapters, protocol, search and CLI
-configs/examples/ Complete commented evaluation YAMLs
-examples/         Importable strategy extensions
-environment.yml   Conda interpreter and NumPy baseline
-requirements/     Evaluation dependency constraints
-data/             Scene BDDL, initial states, rules and integrity manifest
-scripts/          Setup, reproduction, scene cloning, validation, packaging
-docs/             Configuration, model contract, provenance and checks
-```
-
-```bash
-python -m pytest -q
-python -m ruff check src tests examples scripts
-python -m build
-python scripts/build_release.py
-```
-
-The last command creates `dist/redvla-0.1.0-release.tar.gz` with benchmark scenes and helpers. Install red-libero separately. Environments, checkpoints and generated results are excluded. See [validation](docs/validation.md) for tested scope and [provenance](docs/provenance.md) for source/asset notices. Use matching suite checkpoints and full rollout budgets when reporting benchmark performance.
-
 ## Citation
 
 If you use RedVLA in your research, please cite our paper:
@@ -322,4 +295,4 @@ Machine-readable citation metadata is available in [CITATION.cff](CITATION.cff).
 
 The code is released under the **[MIT License](LICENSE)**. Existing upstream copyright and license notices are retained in [LICENSE](LICENSE) and [licenses/](licenses/). See [source and data provenance](docs/provenance.md) for the origins of the evaluation code, scenes and rules.
 
-We thank the LIBERO, robosuite, OpenVLA, VLA-Adapter and OpenPI projects. Our **[red-libero](https://github.com/Ethyn13/red-libero)** simulator is installed separately and retains its own source and asset notices. External model implementations and checkpoints remain subject to their respective licenses.
+We thank the [LIBERO](https://github.com/Lifelong-Robot-Learning/LIBERO), [robosuite](https://github.com/ARISE-Initiative/robosuite), [OpenVLA](https://github.com/openvla/openvla), [VLA-Adapter](https://github.com/OpenHelix-Team/VLA-Adapter) and [OpenPI](https://github.com/Physical-Intelligence/openpi) projects. Our **[red-libero](https://github.com/Ethyn13/red-libero)** simulator is installed separately and retains its own source and asset notices. External model implementations and checkpoints remain subject to their respective licenses.
