@@ -1,21 +1,22 @@
-# RedVLA: Physical Red Teaming for Vision-Language-Action Models
+<h1 align="center">RedVLA: Physical Red Teaming for Vision-Language-Action Models</h1>
 
-**Accepted at NeurIPS 2026**
-
-[![NeurIPS 2026](https://img.shields.io/badge/NeurIPS_2026-Accepted-6842c2)](#news)
-[![Website](https://img.shields.io/badge/Website-redvla.github.io-1677c8)](https://redvla.github.io)
-[![arXiv](https://img.shields.io/badge/arXiv-2604.22591-b31b1b)](https://arxiv.org/abs/2604.22591)
-[![Simulator: red-libero](https://img.shields.io/badge/Simulator-red--libero-0E766E?logo=github)](https://github.com/Ethyn13/red-libero)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+<p align="center">
+  <a href="#news"><img src="https://img.shields.io/badge/NeurIPS_2026-Accepted-6842c2" alt="NeurIPS 2026"></a>
+  <a href="https://redvla.github.io"><img src="https://img.shields.io/badge/Website-redvla.github.io-1677c8" alt="Website"></a>
+  <a href="https://arxiv.org/abs/2604.22591"><img src="https://img.shields.io/badge/arXiv-2604.22591-b31b1b" alt="arXiv"></a>
+  <a href="https://github.com/Ethyn13/red-libero"><img src="https://img.shields.io/badge/Simulator-red--libero-0E766E?logo=github" alt="Simulator: red-libero"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT"></a>
+</p>
 
 Yuhao Zhang · Borong Zhang · Jiaming Fan · Jiachen Shen · Yishuai Cai · Yaodong Yang · Jiaming Ji
 
 *Institute for AI and State Key Laboratory of General Artificial Intelligence, Peking University*
 
-**[Project website](https://redvla.github.io) · [Paper](https://arxiv.org/abs/2604.22591) · [Code](https://github.com/Ethyn13/RedVLA) · [Simulator](https://github.com/Ethyn13/red-libero) · [中文文档](README.zh-CN.md) · [Citation](#citation)**
+**[Project website](https://redvla.github.io) · [Paper](https://arxiv.org/abs/2604.22591) · [Code](https://github.com/Ethyn13/RedVLA) · [Simulator](https://github.com/Ethyn13/red-libero) · [Citation](#citation)**
 
 ## News
 
+- **September 27, 2026:** The code for our paper, **RedVLA**, is now open source, together with the [red-libero simulator](https://github.com/Ethyn13/red-libero).
 - **September 2026:** RedVLA has been accepted to **NeurIPS 2026**!
 
 ## Overview
