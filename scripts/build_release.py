@@ -7,7 +7,7 @@ out = root / "dist"
 out.mkdir(exist_ok=True)
 destination = out / "redvla-0.1.0-release.tar.gz"
 include = ["src", "configs", "docs", "scripts", "tests", "licenses", "data", "examples", "requirements",
-           ".github", "README.md", "README.zh-CN.md", "LICENSE", "CHANGELOG.md", "CITATION.cff", "environment.yml", "pyproject.toml", "MANIFEST.in", ".gitignore"]
+           ".github", "README.md", "LICENSE", "CHANGELOG.md", "CITATION.cff", "environment.yml", "pyproject.toml", "MANIFEST.in", ".gitignore"]
 with tarfile.open(destination, "w:gz") as archive:
     for item in include:
         source = root / item

@@ -1,6 +1,6 @@
 # Custom scenes, violation rules and red-team strategies
 
-This guide uses the full source release. Start with the [installation and model setup](../README.md). For a Chinese walkthrough, see [README.zh-CN.md](../README.zh-CN.md). Commands below run from the RedVLA root in the evaluation environment.
+This guide uses the full source release. Start with the [installation and model setup](../README.md). Commands below run from the RedVLA root in the evaluation environment.
 
 ## 1. Clone a complete, working scene
 

@@ -29,7 +29,7 @@ redvla evaluate --config configs/examples/vla-adapter-client.yml
 
 ```
 
-也可以使用统一复现脚本；指定配置即可运行，red-libero、系统依赖与 Python 版本要求见[主教程](../../README.zh-CN.md)：
+也可以使用统一复现脚本；指定配置即可运行，red-libero、系统依赖与 Python 版本要求见[主教程](../../README.md)：
 
 ```bash
 export RED_LIBERO_ROOT=/absolute/path/to/red-libero

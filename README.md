@@ -294,6 +294,6 @@ Machine-readable citation metadata is available in [CITATION.cff](CITATION.cff).
 
 ## License and acknowledgements
 
-The code is released under the **[MIT License](LICENSE)**. Existing upstream copyright and license notices are retained in [LICENSE](LICENSE) and [licenses/](licenses/). See [source and data provenance](docs/provenance.md) for the origins of the evaluation code, scenes and rules.
+Original RedVLA contributions are released under the **[MIT License](LICENSE)**, copyright (c) 2026 RedVLA contributors. Third-party components and derived portions retain their upstream copyright and license notices in [licenses/](licenses/). See [source and data provenance](docs/provenance.md) for the origins of the evaluation code, scenes and rules.
 
 We thank the [LIBERO](https://github.com/Lifelong-Robot-Learning/LIBERO), [robosuite](https://github.com/ARISE-Initiative/robosuite), [OpenVLA](https://github.com/openvla/openvla), [VLA-Adapter](https://github.com/OpenHelix-Team/VLA-Adapter) and [OpenPI](https://github.com/Physical-Intelligence/openpi) projects. Our **[red-libero](https://github.com/Ethyn13/red-libero)** simulator is installed separately and retains its own source and asset notices. External model implementations and checkpoints remain subject to their respective licenses.

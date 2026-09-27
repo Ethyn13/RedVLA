@@ -1,4 +1,4 @@
-include README.md README.zh-CN.md LICENSE CHANGELOG.md CITATION.cff environment.yml
+include README.md LICENSE CHANGELOG.md CITATION.cff environment.yml
 recursive-include licenses *.txt
 recursive-include docs *.md *.png
 recursive-include tests *.py
